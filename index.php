@@ -5,7 +5,7 @@
 
     <div class="data">
         <label for="data">  Selecione a data: </label>
-        <input name="data" type="date">
+        <input name="data" type="date" id="datepicker">
     </div>
 
     <section>
