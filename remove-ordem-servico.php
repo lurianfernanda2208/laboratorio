@@ -1,8 +1,7 @@
-<?php include("cabecalho.php");
- include("conecta.php");
- include("banco-ordem-servico.php");
+<?php require_once("cabecalho.php");
+ require_once("banco-ordem-servico.php");
 
-$id = $_GET['id'];
+$id = $_POST['id'];
 removeOrdemServico($conexao, $id); 
 header("Location: lista-ordem-servico.php?removido=true");
 die();

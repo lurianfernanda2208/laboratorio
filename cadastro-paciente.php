@@ -1,26 +1,30 @@
-<?php include("cabecalho.php")?>
+<?php require_once("cabecalho.php");
+require_once("logica-usuario.php");
+
+verificaUsuario();
+
+?>
+
+
         <h1 class="text-center">Cadastrar novo paciente</h1>
     </div>
-    <form action="cadastro-ordem-servico.php">
+    <form method="post" action="cadastro-ordem-servico.php">
 
           <div class="form-group">
             <label><strong>Paciente:</strong></label>
             <div class="input-group">
-                <input name="paciente" class="form-control" placeholder="Digite o nome do paciente paciente" required>
+                <input name="paciente" class="form-control" placeholder="Digite o nome do paciente" required>
             </div>
           </div>
 
-          <div class="form-group">
-            <label><strong>Sexo:</strong></label>
-                <div class="form-check form-check-inline">
-                    <input name="sexo-feminino" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">Feminino</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input name="sexo-masculino" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">Masculino</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Feminino</label>
             </div>
-          </div>  
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Masculino</label>
+            </div>
 
             <div class="form-group">
                 <label><strong>Endereço:</strong></label>
@@ -52,6 +56,9 @@
                     <input type="text" class="form-control" id="uf" name="uf">
                 </div>
             </div>
+            <button type="submit" value="Cadastrar" class="btn btn-outline-primary">Salvar</button>
+
+
 <?php include("rodape.php")?>
 
 

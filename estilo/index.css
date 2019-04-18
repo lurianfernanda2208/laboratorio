@@ -3,14 +3,14 @@
     padding-top: .8em;
   }
   
-  .data {
+  /*.data {
     font-weight: bold;
     font-family: "Open Sans Condensed", sans-serif;
     padding-right:.7em;
     padding-top: 2em;
     padding-bottom: .2em;
     display:inline-block;
-  }
+  }*/
   
   .listaexames {
       border: 1px solid #D3D3D3;
@@ -20,6 +20,11 @@
   }
   
   #exame{
+    font-weight: bold;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+
+  .negrito{
     font-weight: bold;
     font-family: "Open Sans Condensed", sans-serif;
   }
